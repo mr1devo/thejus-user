@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Trip Sans Medium';
+  src: url('../Trip-Sans-Font/trip-sans-medium.otf') format('truetype');
+}
+
+body {
+  font-family: 'Trip Sans', Arial, Tahoma, 'Bitstream Vera Sans', sans-serif;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.custom-card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.custom-card:hover {
+  transform: translateY(-5px); /* Apply animation on hover */
+}
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+}
+
+.custom-card-content {
+  padding: 20px;
+}
+
+.custom-card-title {  
+  background: linear-gradient(to right, #1c4957, #00e1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Trip Sans Medium', Arial, Tahoma, 'Bitstream Vera Sans', sans-serif;
+}
+
+.custom-card-description {
+  font-family: 'Trip Sans Medium', Arial, Tahoma, 'Bitstream Vera Sans', sans-serif;
+  margin: 10px 0 0;
+  font-size: .8rem;
+  color: rgba(107, 107, 107, 0.753);
+}
+
+.work h1 {
+  font-size: 3rem;
+}

@@ -1,0 +1,96 @@
+/* Searchbar.css */
+@font-face {
+    font-family: 'Trip Sans Medium';
+    src: url('../Trip-Sans-Font/trip-sans-medium.otf') format('truetype');
+}
+.search-bar {
+    width: 700px;
+    position: absolute;
+    margin-top: 1%;
+    z-index: 1000;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    
+   
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-container {
+    position: relative;
+    flex: 1;
+    border-radius: 15px;
+  
+}
+
+.search-icon {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333333; /* Adjust the color as needed */
+}
+
+.search-input {
+    width: calc(100% - 30px); /* Adjust the width */
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color */
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 50px; /* Space for icon */
+}
+
+.search-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:#000000; /* Adjust background color as needed */
+    border: none;
+    padding: 5px 20px; /* Adjust padding and add a little top padding */
+    border-radius: 20px 20px 20px 20px; /* Top corners rounded, bottom corners straight */
+    cursor: pointer;
+    outline: none;
+    color: #ffffffbe; /* Adjust text color as needed */
+    width: 100px; /* Maintain original width */
+    height: 40px; /* Maintain original height */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make the font bold */
+    font-family: 'Trip Sans Medium', Arial, Tahoma, 'Bitstream Vera Sans', sans-serif;
+}
+
+
+  
+.search-results {
+    
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 400px;
+    background-color: #ffffff; /* Lighter gray background */
+    color: #333333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #33333300; /* Border added with a dark color */
+  }
+  
+
+.search-results span {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-results span:hover {
+    color: #ffffff;
+}

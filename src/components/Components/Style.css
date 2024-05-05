@@ -1,0 +1,88 @@
+.Home {
+  position: relative;
+  font-family: 'Trip Sans Medium', Arial, Tahoma, 'Bitstream Vera Sans', sans-serif;
+}
+
+.second {
+  margin: 4rem 6rem;
+}
+.second h1 {
+  font-size: 3rem;
+}
+.second-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+.second-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+.second-text h2 {
+  padding-bottom: 1rem;
+}
+.image1 {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  
+
+  z-index: 1
+}
+.image1 img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+.image1 img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+.btn-home {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /* border-radius: 8px; */
+  transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+  background-color: #000000; 
+}
+
+
+@font-face {
+  font-family: 'Trip Sans Ultra';
+  src: url('../Trip-Sans-Font/trip-sans-ultra.otf') format('truetype');
+}
+.gradient-text {
+  background: linear-gradient(to right, #6F1805, #feb47b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  color: transparent;
+  font-family: 'Trip Sans ultra', Arial, Tahoma, 'Bitstream Vera Sans', sans-serif;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
